@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.zitrus.stock.entities.enums.MovementType;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 @Entity
@@ -20,11 +20,11 @@ public class StockMovement {
     private Product product;
     @JsonIgnore
     private MovementType movementType;
-    @NotEmpty(message = "Campo 'saleValue' é requerido.")
+    @NotNull(message = "Campo 'saleValue' é requerido.")
     private Double saleValue;
-    @NotEmpty(message = "Campo 'saleDate' é requerido.")
+    @NotNull(message = "Campo 'saleDate' é requerido.")
     private LocalDate saleDate;
-    @NotEmpty(message = "Campo 'movementAmount' é requerido.")
+    @NotNull(message = "Campo 'movementAmount' é requerido.")
     private Long movementAmount;
 
     public Long getId() {

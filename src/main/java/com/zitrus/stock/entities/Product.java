@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.zitrus.stock.entities.enums.ProductType;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -14,16 +14,16 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotEmpty(message = "Campo 'code' é requerido.")
+    @NotNull(message = "Campo 'code' é requerido.")
     private Long code;
-    @NotEmpty(message = "Campo 'description' é requerido.")
+    @NotNull(message = "Campo 'description' é requerido.")
     private String description;
-    @NotEmpty(message = "Campo 'type' é requerido.")
+    @NotNull(message = "Campo 'type' é requerido.")
     private ProductType type;
     @JsonProperty("value")
-    @NotEmpty(message = "Campo 'value' é requerido.")
+    @NotNull(message = "Campo 'value' é requerido.")
     private Double valueProvider;
-    @NotEmpty(message = "Campo 'amount' é requerido.")
+    @NotNull(message = "Campo 'amount' é requerido.")
     private Long amount;
 
     public Long getId() {
