@@ -1,6 +1,11 @@
 package com.zitrus.stock.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.zitrus.stock.entities.enums.ProductType;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "Produto")
@@ -9,11 +14,17 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long codigo;
-    private String descricao;
-    private Integer tipo;
-    private Double valorFornecedor;
-    private Long quantidade;
+    @NotEmpty(message = "Campo 'code' é requerido.")
+    private Long code;
+    @NotEmpty(message = "Campo 'description' é requerido.")
+    private String description;
+    @NotEmpty(message = "Campo 'type' é requerido.")
+    private ProductType type;
+    @JsonProperty("value")
+    @NotEmpty(message = "Campo 'value' é requerido.")
+    private Double valueProvider;
+    @NotEmpty(message = "Campo 'amount' é requerido.")
+    private Long amount;
 
     public Long getId() {
         return id;
@@ -23,43 +34,44 @@ public class Product {
         this.id = id;
     }
 
-    public Long getCodigo() {
-        return codigo;
+
+    public Long getCode() {
+        return code;
     }
 
-    public void setCodigo(Long codigo) {
-        this.codigo = codigo;
+    public void setCode(Long code) {
+        this.code = code;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public Integer getTipo() {
-        return tipo;
+    public ProductType getType() {
+        return type;
     }
 
-    public void setTipo(Integer tipo) {
-        this.tipo = tipo;
+    public void setType(ProductType type) {
+        this.type = type;
     }
 
-    public Double getValorFornecedor() {
-        return valorFornecedor;
+    public Double getValueProvider() {
+        return valueProvider;
     }
 
-    public void setValorFornecedor(Double valorFornecedor) {
-        this.valorFornecedor = valorFornecedor;
+    public void setValueProvider(Double valueProvider) {
+        this.valueProvider = valueProvider;
     }
 
-    public Long getQuantidade() {
-        return quantidade;
+    public Long getAmount() {
+        return amount;
     }
 
-    public void setQuantidade(Long quantidade) {
-        this.quantidade = quantidade;
+    public void setAmount(Long amount) {
+        this.amount = amount;
     }
 }
