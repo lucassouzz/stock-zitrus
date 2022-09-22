@@ -4,6 +4,6 @@ public enum ProductType {
 
     ELETRONIC,
     APPLIANCES,
-    FURNITURE
+    FURNITURE;
 
 }

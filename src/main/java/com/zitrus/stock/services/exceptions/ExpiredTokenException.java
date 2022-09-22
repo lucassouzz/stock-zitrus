@@ -1,10 +1,10 @@
 package com.zitrus.stock.services.exceptions;
 
-public class AmountNegativeException extends RuntimeException {
+public class ExpiredTokenException extends RuntimeException {
 
     private static final long serialVersionUID = 1L;
 
-    public AmountNegativeException(String message) {
+    public ExpiredTokenException(String message) {
         super(message);
     }
 

@@ -1,5 +1,28 @@
--- INSERT INTO Produto (code, description, type, value_provider, amount) VALUES (404, 'Notebook', 1, 3300.90, 1);
--- INSERT INTO Produto (code, description, type, value_provider, amount) VALUES (200, 'Televisao', 1, 2700.01, 1);
--- INSERT INTO Produto (code, description, type, value_provider, amount) VALUES (500, 'Mouse', 1, 400.00, 1);
--- INSERT INTO Produto (code, description, type, value_provider, amount) VALUES (402, 'Monitor', 1, 1200.10, 1);
--- INSERT INTO Produto (code, description, type, value_provider, amount) VALUES (202, 'Fone de Ouvido', 1, 300.10, 1)
+INSERT INTO User_Zitrus (email, password) VALUES ('admin@zitrus.com', 'admin123')
+
+-- INSERT INTO Product (code, description, type_Product, value_provider, amount) VALUES (404, 'Notebook', 'ELETRONIC', 3300.90, 1);
+-- INSERT INTO Product (code, description, type_Product, value_provider, amount) VALUES (10, 'Televisao', 'APPLIANCES', 2700.01, 1);
+-- INSERT INTO Product (code, description, type_Product, value_provider, amount) VALUES (20, 'Mouse', 'FURNITURE', 400.00, 1);
+-- INSERT INTO Product (code, description, type_Product, value_provider, amount) VALUES (40, 'Monitor', 'ELETRONIC', 1200.10, 1);
+-- INSERT INTO Product (code, description, type_Product, value_provider, amount) VALUES (60, 'Fone de Ouvido', 'ELETRONIC', 300.10, 1);
+-- INSERT INTO Product (code, description, type_Product, value_provider, amount) VALUES (70, 'Fonte', 'ELETRONIC', 3300.90, 1);
+-- INSERT INTO Product (code, description, type_Product, value_provider, amount) VALUES (90, 'CAMA', 'APPLIANCES', 2700.01, 1);
+--
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'INPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'INPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (2, 'INPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (4, 'INPUT',	'2022-03-26',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'INPUT',	'2022-03-26',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (6, 'INPUT',	'2022-03-26',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (9, 'INPUT',	'2022-03-26',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'INPUT',	'2022-03-26',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (3, 'INPUT',	'2022-03-26',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'OUTPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'OUTPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'OUTPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'OUTPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'OUTPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'OUTPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'OUTPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'OUTPUT',	'2022-03-20',	100.02,	1);
+-- INSERT INTO Stock_Movement (MOVEMENT_AMOUNT, MOVEMENT_TYPE, SALE_DATE, SALE_VALUE, PRODUCT_ID) VALUES (1, 'OUTPUT',	'2022-03-20',	100.02,	1);

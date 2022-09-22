@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "Movimento")
+@Table(name = "StockMovement")
 public class StockMovement {
 
     @Id
@@ -16,9 +16,10 @@ public class StockMovement {
     private Long id;
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "product_id")
+    @JoinColumn(name = "productId")
     private Product product;
     @JsonIgnore
+    @Enumerated(EnumType.STRING)
     private MovementType movementType;
     @NotNull(message = "Campo 'saleValue' é requerido.")
     private Double saleValue;

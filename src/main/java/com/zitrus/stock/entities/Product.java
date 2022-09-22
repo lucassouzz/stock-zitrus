@@ -5,10 +5,9 @@ import com.zitrus.stock.entities.enums.ProductType;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "Produto")
+@Table(name = "Product")
 public class Product {
 
     @Id
@@ -19,7 +18,8 @@ public class Product {
     @NotNull(message = "Campo 'description' é requerido.")
     private String description;
     @NotNull(message = "Campo 'type' é requerido.")
-    private ProductType type;
+    @Enumerated(EnumType.STRING)
+    private ProductType typeProduct;
     @JsonProperty("value")
     @NotNull(message = "Campo 'value' é requerido.")
     private Double valueProvider;
@@ -51,12 +51,12 @@ public class Product {
         this.description = description;
     }
 
-    public ProductType getType() {
-        return type;
+    public ProductType getTypeProduct() {
+        return typeProduct;
     }
 
-    public void setType(ProductType type) {
-        this.type = type;
+    public void setTypeProduct(ProductType typeProduct) {
+        this.typeProduct = typeProduct;
     }
 
     public Double getValueProvider() {

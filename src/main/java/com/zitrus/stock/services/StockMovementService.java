@@ -14,7 +14,8 @@ public class StockMovementService {
     @Autowired
     private StockMovementRepository repository;
 
-    @Autowired ProductService serviceProduct;
+    @Autowired
+    ProductService serviceProduct;
 
     public StockMovement input(Long productId, StockMovement movement) {
 
@@ -31,9 +32,9 @@ public class StockMovementService {
 
         Product product = serviceProduct.findById(productId);
         Long amaountResult = product.getAmount() - movement.getMovementAmount();
-        if(amaountResult < 0){
+        if (amaountResult < 0) {
             throw new AmountNegativeException("Saldo desejado indisponível, " +
-                    "o saldo disponível é de " + product.getAmount() + ".");
+                    "o saldo disponível é de " + product.getAmount() + " unidades.");
         }
         product.setAmount(amaountResult);
         serviceProduct.update(productId, product);
