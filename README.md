@@ -16,5 +16,5 @@ O mínimo esperado da aplicação:
 ### Observação: 
 ● Foi implementado autenticação via Json Web Token, neste caso para que seja possível realizar as requisições na API é necessário a geração do token por meio do login (/user/login) passando o usuário já pre-cadastrado no banco de dados H2 conforme arquivo import.sql.
 
-#### Documentação básica:
+### Documentação básica:
 [- Visualizar documentação.](https://documenter.getpostman.com/view/14768065/2s7ZEBm1aQ)
